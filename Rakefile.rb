@@ -90,6 +90,7 @@ end
 
 desc "deploy public directory to github pages"
 multitask :publish do
+  system "jekyll build"
   puts "## Deploying branch to Github Pages "
   cd "#{site_dir}" do
     system "git add -A"
@@ -98,4 +99,9 @@ multitask :publish do
     system "git push"
     puts "\n## Github Pages deploy complete"
   end
+end
+
+desc "run the server locally in preview mode"
+task :preview do
+  system "jekyll serve --watch --baseurl=http://localhost:4000"
 end
