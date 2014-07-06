@@ -1,6 +1,6 @@
 title:            Developing Software with Dave
 description:      Sometimes I write code.  Most of the time I don't.
-logo:             site-logo.png
+logo:             dswd-logo.jpg
 disqus_shortname:
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
@@ -10,7 +10,7 @@ url:              http://developing.software.withdave.com
 # Owner/author information
 owner:
   name:           Dave Noel
-  avatar:         bio-photo.jpg
+  avatar:         dave.jpg
   # Social networking links used in footer. Update and remove as you like.
   twitter:
   facebook:
