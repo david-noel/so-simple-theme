@@ -11,18 +11,17 @@ url:              http://developing.software.withdave.com
 owner:
   name:           Dave Noel
   avatar:         bio-photo.jpg
-  email:          you@email.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:
   facebook:
-  github:
+  github: david-noel
   stackexchange:
   linkedin: davidcnoel
   instagram:
   flickr:
   tumblr:
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:
+  google_plus: https://plus.google.com/+davenoel
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:
