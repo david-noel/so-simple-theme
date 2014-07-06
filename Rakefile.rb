@@ -5,6 +5,7 @@ require "stringex"
 ## -- Config -- ##
 
 posts_dir       = "_posts"    # directory for blog files
+site_dir	= "_site"
 new_post_ext    = "md"  # default new post file extension when using the new_post task
 new_page_ext    = "md"  # default new page file extension when using the new_page task
 
@@ -85,4 +86,16 @@ def ask(message, valid_options)
     answer = get_stdin(message)
   end
   answer
+end
+
+desc "deploy public directory to github pages"
+multitask :publish do
+  puts "## Deploying branch to Github Pages "
+  cd "#{site_dir}" do
+    system "git add -A"
+    message = "Site updated at #{Time.now.utc}"
+    system "git commit -m \"#{message}\""
+    system "git push"
+    puts "\n## Github Pages deploy complete"
+  end
 end
