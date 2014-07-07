@@ -103,5 +103,5 @@ end
 
 desc "run the server locally in preview mode"
 task :preview do
-  system "jekyll serve --watch --baseurl=http://localhost:4000"
+  system "jekyll serve --watch --baseurl="
 end

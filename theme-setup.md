@@ -125,7 +125,7 @@ so-simple-theme/
 
 ### _config.yml
 
-Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. Links are absolute and prefixed with `{{ "{{ site.url " }}}}` in the various `_includes` and `_layouts`, so remember to properly set `url`[^1] and use `http://localhost:4000` when developing locally or else the theme's stylesheet and scripts won't load.
+Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. Links are absolute and prefixed with `{{ "{{ site.baseurl " }}}}` in the various `_includes` and `_layouts`, so remember to properly set `url`[^1] and use `http://localhost:4000` when developing locally or else the theme's stylesheet and scripts won't load.
 #### Disqus Comments
 
 Create a [Disqus](http://disqus.com) account and change `disqus_shortname` in `_config.yml` to the Disqus *shortname* you just setup. To enable commenting on a post, add the following to its front matter:
@@ -171,7 +171,7 @@ search: true
 {% endhighlight %}
 
 <figure>
-  <img src="{{ site.url }}/images/simple-search-screenshot.jpg" alt="search screenshot">
+  <img src="{{ site.baseurl }}/images/simple-search-screenshot.jpg" alt="search screenshot">
   <figcaption>Clicking search triggers an overlay that allows you to search by post title.</figcaption>
 </figure>
 
@@ -237,7 +237,7 @@ Post and page thumbnails work the same way. These are used by [Open Graph](https
 
 Here's an example of what a tweet to your site could look like if you activate Twitter Cards and include all the metas in your post's YAML.
 
-![Twitter Card summary large image screenshot]({{ site.url }}/images/twitter-card-summary-large-image.jpg)
+![Twitter Card summary large image screenshot]({{ site.baseurl }}/images/twitter-card-summary-large-image.jpg)
 
 #### Videos
 
@@ -263,7 +263,7 @@ Twitter cards make it possible to attach images and post summaries to Tweets tha
 
 #### Link Post Type
 
-So Simple Theme now supports **link posts**, made famous by John Gruber. To activate just add `link: http://url-you-want-linked` to the post's YAML front matter and you're done. Here's an [example of a link post]({{ site.url }}/articles/sample-link-post) if you need a visual.
+So Simple Theme now supports **link posts**, made famous by John Gruber. To activate just add `link: http://url-you-want-linked` to the post's YAML front matter and you're done. Here's an [example of a link post]({{ site.baseurl }}/articles/sample-link-post) if you need a visual.
 
 ---
 
@@ -287,7 +287,7 @@ Having a problem getting something to work or want to know why I setup something
 
 ## License
 
-This theme is free and open source software, distributed under the [GNU General Public License]({{ site.url }}/LICENSE) version 2 or later. So feel free to to modify this theme to suit your needs. 
+This theme is free and open source software, distributed under the [GNU General Public License]({{ site.baseurl }}/LICENSE) version 2 or later. So feel free to to modify this theme to suit your needs. 
 
 If you'd like to give me credit somewhere on your blog or tweet a shout out to [@mmistakes](https://twitter.com/mmistakes), that would be pretty sweet.
 

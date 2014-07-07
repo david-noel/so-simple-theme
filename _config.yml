@@ -3,9 +3,8 @@ description:      Sometimes I write code.  Most of the time I don't.
 logo:             dswd-logo.jpg
 disqus_shortname:
 search:           true
-# Change url to your domain. Leave localhost server or blank when working locally.
-# You don't need to specify the protocol if you want it available on http and https. Example: //localhost:4000
-url:              http://developing.software.withdave.com
+# Change baseurl to your domain.
+baseurl:          http://developing.software.withdave.com
 
 # Owner/author information
 owner:
